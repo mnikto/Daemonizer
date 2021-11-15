@@ -1,4 +1,5 @@
 /* ================================================================================= */
+
 1) Make service for run
 
 #include "service.h"
@@ -14,6 +15,7 @@ class TestService: public daemonizer::Service {
 };
 
 /* ================================================================================= */
+
 2) Make Daemoniser
 
 #include "daemon.h"
@@ -30,6 +32,7 @@ class TestDaemon : public daemonizer::Daemonizer {
 
 
 /* ================================================================================= */
+
 3) Start your daemon in main.cc
 
 #include "test_daemon.h"
