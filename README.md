@@ -5,13 +5,13 @@
 #include "service.h"
 
 class TestService: public daemonizer::Service {
-	public:
-		explicit TestService() {}
-		virtual TestService() {}
-
-		bool run() override {
-			// Do something here for your service
-		}
+  public:
+    explicit TestService() {}
+    virtual TestService() {}
+    
+    bool run() override {
+       // Do something here for your service
+    }
 };
 
 /* ================================================================================= */
