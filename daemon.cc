@@ -62,9 +62,6 @@ class Daemonizer::Data {
  private:
   bool demonize_{true};
   std::string file_path_;
-
- public:
-  Settings::Pointer settings_;
 };
 
 /* ========================================================================== */
