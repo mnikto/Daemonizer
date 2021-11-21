@@ -1,3 +1,5 @@
+project(Daemonizer)
+
 set(target daemonizer)
 
 set(sources
@@ -6,12 +8,12 @@ set(sources
     ${CMAKE_CURRENT_SOURCE_DIR}/daemon.cc
     ${CMAKE_CURRENT_SOURCE_DIR}/daemon.h)
 
-add_executable(${target} ${sources})
+add_library(${target} STATIC  ${sources})
 
-target_include_directories(${TARGET_NAME}
+target_include_directories(${target}
         PRIVATE
             ${CMAKE_CURRENT_SOURCE_DIR})
 
-set_target_properties( ${TARGET_NAME}
+set_target_properties( ${target}
         PROPERTIES
             CXX_STANDARD 17)
